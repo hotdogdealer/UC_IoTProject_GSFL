@@ -1,9 +1,5 @@
-import random 
-import sys
-from azure.iot.hub import IoTHubRegistryManager 
+import time
+from azure.iot.device import IoTHubDeviceClient
 
-raw_input = 0
-
-MESSAGE_COUNT = 2
-AVG_WIND_SPEED = 10.0 
-MSG_TXT = "{\"Gratulation, sie haben einen kostenlosen Kaffee gewonnen!\": %.2f}"
+RECEIVED_MESSAGES = 0
+CONNECTION_STRING = "HostName=iot3bhwii22-fi.azure-devices.net;DeviceId=Kaffeemaschine;SharedAccessKey=H4q5C+TfTjyUPLiRe8RmbN5UVOjP7zg9gQYFL9Xkyys="
